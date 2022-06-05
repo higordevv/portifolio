@@ -4,10 +4,27 @@
 
     }
     .text-about table {
-        margin-top: 300px;
+        margin-top: 200px;
         
     }
     .text-about p {
         margin: auto;
+        font-size: 1em;
     }
+    .aboutme ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    
+    }
+    .aboutme ul li {
+        list-style: none;
+        margin: 15px;
+    }
+    table tr img {
+        margin-right: 0px;
+        padding-bottom: 10px;
+        width: 40px;
+    }
+
 }
