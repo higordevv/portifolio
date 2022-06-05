@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&family=Ubuntu:ital,wght@1,700&display=swap');
+
+.secl {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.linep {
+    border-right: 2px solid;
+    color: rgba(255, 255, 255, .75);
+    font-family: "Special Elite", monospace;
+    margin: 0% auto;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+.type-animation {
+    animation: pulse 500ms steps(40) infinite normal,
+        typing 4s steps(40) 1s normal both;
+}
+
+@keyframes pulse {
+    from {
+        border-right-color: rgba(255, 255, 255, .75);
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 10em;
+    }
+
+}
+
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    padding-top: 83px;
+    background-color: black;
+}
+
+.home section h1 {
+    margin: 25px;
+    font-family: 'Special Elite', monospace;
+    color: yellow;
+}
