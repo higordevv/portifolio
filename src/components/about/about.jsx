@@ -1,4 +1,5 @@
 import './about-style.css'
+import './media.css'
 import React, { useState, useEffect} from 'react'
 
 import git from "./../../imgs/icons/git.png";

@@ -1,0 +1,13 @@
+@media (max-width: 720px) {
+    .text-about {
+        flex-direction: column;
+
+    }
+    .text-about table {
+        margin-top: 300px;
+        
+    }
+    .text-about p {
+        margin: auto;
+    }
+}
