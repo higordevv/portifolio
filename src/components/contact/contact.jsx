@@ -26,7 +26,7 @@ const ContactArea = () => {
                     <ul>
                         <li>
                             <img src={instagram} alt="Instagram" />
-                            <a href="https://www.instagram.com/higorxl.sz/?hl=pt-br" target="_blank">Higor</a>
+                            <a href="https://www.instagram.com/higorxl.sx/?hl=pt-br" target="_blank">Higor</a>
                         </li>
                     </ul>
                     <ul>
