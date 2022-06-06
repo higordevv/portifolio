@@ -29,3 +29,23 @@
 .navlinks a:hover {
     border-bottom: 2px solid yellow;
 }
+
+.MobileNavbar {
+    display: none;
+}
+
+@media (max-width:990px){
+    .navbar {
+        display: none;
+    }
+    .MobileNavbar{ 
+        display: flex;
+        background-color: #181818;
+        justify-content: center;
+    }
+    .MobileNavbar .menu3 {
+        margin: auto;
+        cursor: pointer;
+    }
+
+}
