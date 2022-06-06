@@ -1,0 +1,39 @@
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: center;
+    background-color: #232829;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    bottom: 0;
+}
+
+.contact h1{
+    text-align: center;
+    border-bottom: 5px solid yellow;
+    color: white;
+}
+
+.contact .i-contato {
+    margin: 30px 0;
+}
+
+.i-contato img {
+    margin-right: 10px;
+    height: 20px;
+
+}
+
+.i-contato ul li {
+    list-style: none;
+    display: display;
+    min-width: 10px;
+    margin: 5px 0;
+    color: #dee0e1;
+}
+
+.i-contato a {
+    color: #dee0e1;
+    text-decoration: none;
+}
