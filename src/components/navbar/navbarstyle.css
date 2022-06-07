@@ -40,12 +40,34 @@
     }
     .MobileNavbar{ 
         display: flex;
+        flex-direction: column;
         background-color: #181818;
-        justify-content: center;
+        opacity: 0.9;
+        padding: 5px;
+        width: 100%;
+        display: flex;
+        position: fixed;
+    }
+
+    .MobileNavbar ul {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        text-align: center;
+    }
+    .MobileNavbar ul li {
+        margin: 15px auto;
     }
     .MobileNavbar .menu3 {
         margin: auto;
+        align-self: center;
         cursor: pointer;
     }
+    .MobileNavbar .close {
+        margin: auto;
+        align-self: center;
+        cursor: pointer;
+    }
+
 
 }
