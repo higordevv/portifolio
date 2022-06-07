@@ -58,6 +58,11 @@
     .MobileNavbar ul li {
         margin: 15px auto;
     }
+    .MobileNavbar a:hover{
+        border: none;
+        color: yellow;
+        transition: 1s;
+    }
     .MobileNavbar .menu3 {
         margin: auto;
         align-self: center;

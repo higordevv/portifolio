@@ -17,11 +17,13 @@ const MobileNav = () => {
     const closeIcon = <FaRegWindowClose className="close" size='40px' color="yellow"
         onClick={()=>{setOpen(!abrir)}}/>
 
+    const closeMobileMenu = () => setOpen(false)
+
 
     return (
         <nav className="MobileNavbar">
             {abrir? closeIcon : hamburguerIcon}
-            {abrir && <NavLinks />}
+            {abrir && <NavLinks isMobile={true} closeMobileMenu={closeMobileMenu}/>}
         </nav>
     );
 }
