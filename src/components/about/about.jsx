@@ -1,6 +1,6 @@
 import './about-style.css'
 import './media.css'
-import React, { useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 
 import git from "./../../imgs/icons/git.png";
 import linux from "./../../imgs/icons/linux.png";
@@ -13,21 +13,36 @@ import js from './../../imgs/icons/js.png'
 import css from './../../imgs/icons/css-3.png'
 import react from './../../imgs/icons/atom.png'
 
+import useSWR from 'swr'
+
 
 const AboutArea = () => {
+
+    const fetcher = (...args) => fetch(...args).then(res => res.json())
+
+    function Profile(...args) {
+        const { data, error } = useSWR(args , fetcher)
+
+        if (error) return <div>falhou ao carregar</div>
+        if (!data) return <div>carregando...</div>
+
+        // rednerizar dados
+        return data
+    }
+
+    const Avatar = Profile('https://api.github.com/users/HigorDevJ')
+
     return (
         <div id="about" className='aboutme'>
             <h1>About me</h1>
             <div className='text-about'>
-                <p className='abouttext'>
-                I am a 17 year old Brazilian programmer, currently living in Rio das Pedras, São Paulo, I have knowledge of Web Development with Html, css and JavaScript in addition to Frameworks such as React.Js
-                <ul className='TecP'>
-                    <li> <img src={html} alt="html" srcset="" /></li>
-                    <li> <img src={css} alt="css" srcset="" /></li>
-                    <li> <img src={js} alt="JavaScript" srcset="" /></li>
-                    <li> <img src={react} alt="React.js" srcset="" /></li>
-                </ul>
+                <div className='infor_me'>
+                <img src={Avatar.avatar_url} className='profile' />
+                <p>
+                    I am a 17 year old Brazilian programmer, currently living in Botucatu, São Paulo, I have knowledge of Web Development with Html, css and JavaScript in addition to Frameworks such as React.Js
                 </p>
+
+                </div>
                 <table className='Tec-additional'>
                     <tr>
                         <th>Additional knowledge:</th>
@@ -36,19 +51,19 @@ const AboutArea = () => {
                         <td><img src={pitao} alt="" /><p>Python</p> </td>
                     </tr>
                     <tr>
-                        <td><img src={linux} alt="" srcset="" /><p>Linux</p></td>
+                        <td><img src={linux} alt="" /><p>Linux</p></td>
                     </tr>
                     <tr>
                         <td><img src={typescript} alt="" />
-                       <p>TypeScript</p> </td>
+                            <p>TypeScript</p> </td>
                     </tr>
                     <tr>
-                        <td><img src={git}alt="" /><p>Git</p></td>
+                        <td><img src={git} alt="" /><p>Git</p></td>
                     </tr>
                     <tr>
                         <td>
                             <img src={shell} alt="" />
-                         <p> ShellScript</p></td>
+                            <p> ShellScript</p></td>
                     </tr>
 
                 </table>
