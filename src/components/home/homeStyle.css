@@ -9,7 +9,7 @@
 
 .linep {
     border-right: 2px solid;
-    color: rgba(255, 255, 255, .75);
+    color: rgb(255, 255, 255);
     font-family: "Special Elite", monospace;
     margin: 0% auto;
     white-space: nowrap;
@@ -51,11 +51,20 @@
     justify-content: center;
     height: 600px;
     padding-top: 83px;
-    background-color: black;
+    background-image: url('./../../imgs/bg-animated/bg-paralax.jpg');
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .home section h1 {
     margin: 25px;
     font-family: 'Special Elite', monospace;
     color: yellow;
+}
+
+@media (max-width:900px) {
+    .home{
+        background-position: left;
+    }
+    
 }
