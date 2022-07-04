@@ -14,7 +14,7 @@ const ContactArea = () => {
                     <ul>
                         <li> 
                             <img src={endereço} alt="endereço" />
-                            Brasil, São Paulo, Rio das Pedras
+                            Brasil, São Paulo, Botucatu
                         </li>
                     </ul>
                     <ul>

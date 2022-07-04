@@ -4,7 +4,7 @@
 
     }
     .text-about table {
-        margin-top: 200px;
+        margin-top: 20px;
         
     }
     .text-about p {
@@ -25,6 +25,19 @@
         margin-right: 0px;
         padding-bottom: 10px;
         width: 40px;
+    }
+    div.infor_me  {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        word-wrap: break-word;
+    
+    }
+    div.infor_me p {
+        font-size: 12px;
+        margin: 14px;
     }
 
 }
