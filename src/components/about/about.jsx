@@ -30,7 +30,7 @@ const AboutArea = () => {
         return data
     }
 
-    const Avatar = Profile('https://api.github.com/users/HigorDevJ')
+    const Avatar = Profile('https://api.github.com/users/higordevv')
 
     return (
         <div id="about" className='aboutme'>
