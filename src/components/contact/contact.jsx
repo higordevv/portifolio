@@ -20,7 +20,7 @@ const ContactArea = () => {
                     <ul>
                         <li>
                             <img src={github} alt="github" />
-                            <a href="https://github.com/HigorDevJ" target="_blank">Higor Dev</a>
+                            <a href="https://github.com/higordevv" target="_blank">Higor Dev</a>
                         </li>
                     </ul>
                     <ul>
