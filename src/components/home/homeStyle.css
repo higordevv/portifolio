@@ -16,34 +16,6 @@
     overflow: hidden;
 }
 
-
-.type-animation {
-    animation: pulse 500ms steps(40) infinite normal,
-        typing 4s steps(40) 1s normal both;
-}
-
-@keyframes pulse {
-    from {
-        border-right-color: rgba(255, 255, 255, .75);
-    }
-
-    to {
-        border-right-color: transparent;
-    }
-}
-
-@keyframes typing {
-    from {
-        width: 0;
-    }
-
-    to {
-        width: 10em;
-    }
-
-}
-
-
 .home {
     display: flex;
     width: 100%;
@@ -51,20 +23,11 @@
     justify-content: center;
     height: 600px;
     padding-top: 83px;
-    background-image: url('./../../imgs/bg-animated/bg-paralax.jpg');
-    background-position: center;
-    background-attachment: fixed;
+    background-color: black;
 }
 
 .home section h1 {
     margin: 25px;
     font-family: 'Special Elite', monospace;
     color: yellow;
-}
-
-@media (max-width:900px) {
-    .home{
-        background-position: left;
-    }
-    
 }
