@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
+import { HTMLAttributes } from "react";
 
-const NavLinks = () => {
+interface NavLinksProps extends HTMLAttributes<HTMLElement> {}
+
+const NavLinks = ({ className, ...rest }: NavLinksProps) => {
   return (
-    <ul className="flex gap-10">
+    <ul className={`flex ${className}`} {...rest}>
       <li>
         <Link to="/">
           <button className="bg-brown-200 px-4 py-2 rounded-md">Home</button>
