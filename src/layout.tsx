@@ -10,7 +10,7 @@ export default function Layout() {
 
         <MobileNavbar className="md:hidden" />
       </div>
-      <div className="m-0 p-0 flex flex-col justify-center items-center">
+      <div className="m-0 p-0 flex flex-col justify-center items-center max-w-screen max-h-screen">
         <Outlet />
       </div>
     </div>
