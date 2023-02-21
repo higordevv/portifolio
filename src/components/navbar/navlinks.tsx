@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { HTMLAttributes } from "react";
+import SwitchLanguage from "../SwitchLanguage";
 
 interface NavLinksProps extends HTMLAttributes<HTMLElement> {}
 
