@@ -23,10 +23,10 @@ function MobileNavbar({ className, ...rest }: MobileNavbarProps) {
           >
             <GrClose color="#F2F2F2" />
           </button>
-          <div className="absolute z-50">
-            <div className="w-screen h-1/5 flex justify-center items-center ">
+          <div className="absolute z-50 ">
+            <div className="w-screen h-screen  md:h-1/5 flex justify-center items-center ">
               <NavLinks
-                className="flex-col gap-11 text-white w-full h-full p-20 items-center bg-background bg-opacity-80"
+                className="flex-col gap-11 text-white w-full h-screen p-20 items-center bg-background bg-opacity-80"
                 onClick={() => setOpen(false)}
               />
             </div>
