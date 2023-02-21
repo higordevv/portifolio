@@ -11,7 +11,7 @@ function MobileNavbar({ className, ...rest }: MobileNavbarProps) {
       {!open ? (
         <button
           onClick={() => setOpen(true)}
-          className="p-8 text-4xl text-ice-100"
+          className="m-8 text-4xl text-ice-100"
         >
           <GiHamburgerMenu />
         </button>
