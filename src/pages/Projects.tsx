@@ -7,7 +7,7 @@ function Projects() {
       <Swiper />
 
       <div className="md:w-1/2 md:p-8 flex flex-col justify-center gap-8 text-center items-center ">
-        <h1 className="hidden md:text-3xl text-yellow-400 font-semibold">
+        <h1 className="hidden md:block md:text-3xl text-yellow-400 font-semibold">
           Descrição
         </h1>
         <div className="hidden md:block w-full text-center">
